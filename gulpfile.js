@@ -40,7 +40,7 @@ gulp.task('css-libs', ['sass'], function () {
     return gulp.src('src/css/libs.css')
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('rsc/css'));
+        .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
